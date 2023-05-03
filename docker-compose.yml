@@ -14,8 +14,6 @@ services:
   server:
     build: .
     container_name: video-server
-    hosts:
-      - "ec2-3-92-226-113.compute-1.amazonaws.com"
     ports:
       - "5050:5050"
     depends_on:
